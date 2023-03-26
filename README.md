@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+## MERN Login Signup Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+⚠ **Update 3rd April 2021** : React and NodeJS packaged updated/fixed using `npm audit`, Packages updated may have breaking changes, If running the code in this repo causes any issues, send me an e-mail ⚠
 
-## Available Scripts
+Minimalistic, ready-to-use component for Sessions based Login and Sign-Up using Reactjs, Redux, Bootstrap Node.js + Express and MongoDB, can be used as a starting point for another project that needs authentication.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Login page with success/error messages
+- Register page with success/error messages
+- Protected Profile page route that needs authentication to access
+- Persistence achieved using Sessions, with session ID stored on Cookie
+- Logout deletes session in database and cookie from browser
+- Fully responsive across Desktop, Tablet and Mobile
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js
+- NPM
+- React
+- MongoDB Atlas MongoURI
+- **.env file with ENV variables**, a .env template is provided
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Quick Start
 
-### `npm run build`
+Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+ https://github.com/shawn-dsilva/mern-login-signup-component.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install packages for Node backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+ cd mern-login-signup-component
+ npm install
+```
 
-### `npm run eject`
+Install packages for React client
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+ cd mern-login-signup-component/client
+ npm install
+```
+To Test Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+remove the line ```"homepage": "https://demos.shawndsilva.com/sessions-auth-app",```
+from ```client/package.json```
+remove ```basename="/sessions-auth-app"```
+from ```client/src/index.js```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start Dev Server ( both React server and Nodejs server )
 
-## Learn More
+```
+ npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Image Gallery
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Homepage**
+<img src="https://i.imgur.com/mjdMhvd.png">
 
-### Code Splitting
+**Login**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img src="https://i.imgur.com/FVRZcER.png">
 
-### Analyzing the Bundle Size
+**Login with Error message**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img src="https://i.imgur.com/UQVkaZD.png">
 
-### Making a Progressive Web App
+**Register**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<img src="https://i.imgur.com/FDNERPS.png">
 
-### Advanced Configuration
+**Register with Error message**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="https://i.imgur.com/uDj6axZ.png">
 
-### Deployment
+**Register with Success message**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img src="https://i.imgur.com/82C8VQM.png">
 
-### `npm run build` fails to minify
+**Profile Page**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://i.imgur.com/JMi9yrH.png">
