@@ -18,9 +18,7 @@ Our website is dedicated to promoting mental wellness, reducing stigma, and prov
 ## Presentation Link:
   <a href="https://docs.google.com/presentation/d/1y0qeCBmglfNcs4wvWwl5dPYk6cu3oQ9V/edit?usp=share_link&ouid=101513313812274202198&rtpof=true&sd=true"> PPT link here </a>
   
-  
-## Table of Contents:
-
+ 
 ## Technology Stack:
 1.Frontend – React , Tailwind CSS
 2.Framework - Express.js
